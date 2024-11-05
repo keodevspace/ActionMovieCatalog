@@ -19,10 +19,10 @@ A RESTful API to manage a catalog of action movies, allowing users to add, searc
   * Access permissions (e.g. users can edit their own comments)
 
 ## Technologies Used
-**Back-end:** C# with ASP.NET Core
-**Database:** SQL Server
-**Authentication:** JWT
-**Documentation:** Swagger
+- C# with ASP.NET Core
+- SQL Server
+- JWT
+- Swagger
 
 ## How to Run
 ### Prerequisites
