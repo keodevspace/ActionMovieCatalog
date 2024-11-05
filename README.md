@@ -44,7 +44,7 @@ A RESTful API to manage a catalog of action movies, allowing users to add, searc
 
 ## API documentation
 The interactive API documentation is available at:
-http://localhost:5000/swagger
+https://localhost:5001/swagger/index.html
 
 ## Author
 Keo Coelho
