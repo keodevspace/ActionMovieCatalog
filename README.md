@@ -1,7 +1,9 @@
-## Action Movie Catalog API
+# Action Movie Catalog API
 
 ## Description
 A RESTful API to manage a catalog of action movies, allowing users to add, search, update, remove movies, as well as rate and comment on them.
+
+[Image](ActionMovieCatalogAPI.Api/assets/api.jpg)
 
 ## Features
 * Movie Management
