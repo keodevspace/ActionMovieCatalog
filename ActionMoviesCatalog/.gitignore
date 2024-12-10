@@ -3,6 +3,8 @@
 # Ignore build outputs
 bin/
 obj/
+Properties/
+
 
 # Ignore user-specific files
 *.user
