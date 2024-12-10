@@ -1,0 +1,6 @@
+@ActionMoviesCatalog.Api_HostAddress = http://localhost:5225
+
+GET {{ActionMoviesCatalog.Api_HostAddress}}/movieapi
+Accept: application/json
+
+###
