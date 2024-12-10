@@ -1,8 +1,0 @@
-C:\Users\keoxc\OneDrive\Documentos\DEV\ActionMovieCatalog\ActionMoviesCatalog\obj\Debug\net8.0\ActionMoviesCatalog.csproj.AssemblyReference.cache
-C:\Users\keoxc\OneDrive\Documentos\DEV\ActionMovieCatalog\ActionMoviesCatalog\obj\Debug\net8.0\ActionMoviesCatalog.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\keoxc\OneDrive\Documentos\DEV\ActionMovieCatalog\ActionMoviesCatalog\obj\Debug\net8.0\ActionMoviesCatalog.AssemblyInfoInputs.cache
-C:\Users\keoxc\OneDrive\Documentos\DEV\ActionMovieCatalog\ActionMoviesCatalog\obj\Debug\net8.0\ActionMoviesCatalog.AssemblyInfo.cs
-C:\Users\keoxc\OneDrive\Documentos\DEV\ActionMovieCatalog\ActionMoviesCatalog\obj\Debug\net8.0\ActionMoviesCatalog.csproj.CoreCompileInputs.cache
-C:\Users\keoxc\OneDrive\Documentos\DEV\ActionMovieCatalog\ActionMoviesCatalog\obj\Debug\net8.0\ActionMoviesCatalog.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\keoxc\OneDrive\Documentos\DEV\ActionMovieCatalog\ActionMoviesCatalog\obj\Debug\net8.0\ActionMoviesCatalog.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\keoxc\OneDrive\Documentos\DEV\ActionMovieCatalog\ActionMoviesCatalog\obj\Debug\net8.0\ActionMoviesCatalog.sourcelink.json
