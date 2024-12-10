@@ -20,29 +20,13 @@ A RESTful API to manage a catalog of action movies, allowing users to add, searc
   * User login
   * Access permissions (e.g. users can edit their own comments)
 
-## Technologies Used
-- C# with ASP.NET Core
-- SQL Server
-- JWT
+## Technologies and Tools
+- NET 8
+- Oracle Database with Docker
+- EFCore
 - Swagger
-
-## How to Run
-### Prerequisites
-* .NET 8.0
-* SQL Server
-
-### Steps
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/keodevspace/ActionMovieCatalogAPI.git](https://github.com/keodevspace/ActionMovieCatalogAPI.git)
-2. **Restore the database:** 
-   ```bash
-   dotnet ef database update
-3. **Configure the connection string:** Edit the `appsettings.json` file with your database information.
-4. **Run the application:**
-   ```bash
-   dotnet run
-   ```
+- Dependency Injection
+- Async/Await 
 
 ## API documentation
 The interactive API documentation is available at:

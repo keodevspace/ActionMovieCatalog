@@ -1,0 +1,30 @@
+# .gitignore
+
+# Ignore build outputs
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.suo
+
+# Ignore temporary files
+*.tmp
+*.log
+*.vspscc
+*.vssscc
+
+# Ignore test results
+TestResults/
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+
+# Ignore package directories
+node_modules/
+packages/
+
+# Ignore other files
+*.DS_Store
+*.swp
