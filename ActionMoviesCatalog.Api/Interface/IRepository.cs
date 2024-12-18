@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
 namespace ActionMoviesCatalog.Api.Interfaces;
 public interface IRepository<T> where T : class
 {

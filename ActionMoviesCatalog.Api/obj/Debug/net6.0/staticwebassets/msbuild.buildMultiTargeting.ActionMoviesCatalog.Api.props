@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ActionMoviesCatalog.Api.props" />
+</Project>

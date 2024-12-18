@@ -137,3 +137,4 @@ C:\Users\keoxc\OneDrive\Documentos\DEV\ActionMoviesCatalog\src\ActionMoviesCatal
 C:\Users\keoxc\OneDrive\Documentos\DEV\ActionMoviesCatalog\src\ActionMoviesCatalog.Api\bin\Debug\net9.0\runtimes\linux\lib\net8.0\System.DirectoryServices.Protocols.dll
 C:\Users\keoxc\OneDrive\Documentos\DEV\ActionMoviesCatalog\src\ActionMoviesCatalog.Api\bin\Debug\net9.0\runtimes\osx\lib\net8.0\System.DirectoryServices.Protocols.dll
 C:\Users\keoxc\OneDrive\Documentos\DEV\ActionMoviesCatalog\src\ActionMoviesCatalog.Api\bin\Debug\net9.0\runtimes\win\lib\net8.0\System.DirectoryServices.Protocols.dll
+c:\Users\keoxc\OneDrive\Documentos\DEV\ActionMoviesCatalog\src\ActionMoviesCatalog.Api\obj\Debug\net9.0\ActionMoviesCatalog.Api.sourcelink.json

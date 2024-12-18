@@ -1,6 +1,7 @@
 using ActionMoviesCatalog.Api.Entities;
 using ActionMoviesCatalog.Api.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace ActionMoviesCatalog.Api.Controllers;
 

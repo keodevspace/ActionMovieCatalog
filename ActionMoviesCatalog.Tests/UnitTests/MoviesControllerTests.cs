@@ -30,7 +30,6 @@ public class MoviesControllerTests
         Assert.Equal(2, movies.Count);
     }
 
-
     [Fact]
     public async Task AddMovie_Should_Return_CreatedResult()
     {

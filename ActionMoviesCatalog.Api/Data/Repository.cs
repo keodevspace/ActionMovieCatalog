@@ -1,5 +1,7 @@
 using ActionMoviesCatalog.Api.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace ActionMoviesCatalog.Api.Data;
 public class Repository<T> : IRepository<T> where T : class
