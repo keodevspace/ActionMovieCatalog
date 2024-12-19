@@ -1,6 +1,6 @@
 @ActionMoviesCatalog.Api_HostAddress = http://localhost:5114
 
-GET {{ActionMoviesCatalog.Api_HostAddress}}/weatherforecast/
+GET {{ActionMoviesCatalog.Api_HostAddress}}/swagger/
 Accept: application/json
 
 ###
