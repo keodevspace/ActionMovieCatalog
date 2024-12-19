@@ -1,0 +1,21 @@
+ActionMoviesCatalog/
+│
+├── src/
+│   ├── ActionMoviesCatalog.Api/
+│   │   ├── Controllers/
+│   │   ├── Data/
+│   │   ├── Entities/
+│   │   ├── Interfaces/
+│   │   ├── Migrations/
+│   │   ├── Program.cs
+│   │   ├── appsettings.json
+│   │   ├── Startup.cs
+│   │
+│   ├── ActionMoviesCatalog.Tests/
+│       ├── UnitTests/│       
+│       ├── ActionMoviesCatalog.Tests.csproj
+│
+├── docker-compose.yml
+├── README.md
+├── struture.txt
+
