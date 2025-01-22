@@ -1,0 +1,12 @@
+### Login
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "testpassword"
+}
+
+### Get Movies (Authenticated)
+GET http://localhost:5000/api/movies
+Authorization: Bearer {{token_bearer}}
