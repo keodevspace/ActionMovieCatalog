@@ -1,62 +1,60 @@
-# Action Movies Catalog
+# ActionMovieCatalog
 
-This project is an action movie catalog, developed with **.NET 8** and **Oracle Database**, using **JWT** for authentication and **Docker** for containerization.
+This project is a RESTful API for managing an action movies catalog, built with .NET 9, SQLite, and JWT authentication. The API is deployed using serverless functions on Vercel and implements user management with Identity.
 
 ## Features
 
-- **JWT Authentication**: Protects the API endpoints.
-- **Movie CRUD**: Allows you to create, list, edit, and delete action movies.
-- **Oracle Database**: Uses PL/SQL to store and manage data.
+- JWT-based user authentication using Identity
+- User registration and role-based access control
+- CRUD operations for action movies
+- Swagger for API documentation and testing
+- Hosted using serverless functions on Vercel
 
-## Requirements
+## Project Structure
 
-- [Docker](https://www.docker.com/products/docker-desktop) for running Oracle Database
-- [Postman](https://www.postman.com/) to test the API
+- `ActionMoviesCatalog.Api`: Contains the main API logic
+- `ActionMoviesCatalog.Tests`: Unit tests for the API
 
-## How to Run
+## Setup
 
-### 1. Clone the repository
+1. Install .NET SDK 9.0 or later from [here](https://dotnet.microsoft.com/download).
+2. Run `dotnet restore` to install dependencies
+3. Configure the database connection string as an environment variable `DATABASE_CONNECTION`.
+4. Add environment variables for JWT:
+   - `JWT_KEY`: The secret key for signing tokens.
+   - `JWT_ISSUER`: The issuer of the tokens.
+   - `JWT_AUDIENCE`: The audience for the tokens.
+5. Deploy the project to Vercel by linking your GitHub repository and setting the above environment variables in the Vercel dashboard.
 
-```bash
-git clone https://github.com/keodevspace/ActionMovieCatalog.git
-cd ActionMovieCatalog
-```
+## Usage
 
-### 2. Start Docker
+### Local Development
+1. Run the API locally:
+   ```bash
+   dotnet run --project src/ActionMovieCatalog.Api
+   ```
+2. Access the API documentation locally at `https://localhost:5000/swagger`.
 
-```bash
-docker-compose up -d
-```
+### Deployed API
+The API is deployed on Vercel and can be accessed via the provided public URL.
 
-### 3. Configure the Database
+## Deploying on Vercel
 
-Edit the database settings in the `appsettings.json` file to point to your Oracle database.
+1. Push the project to a GitHub repository.
+2. Log in to [Vercel](https://vercel.com).
+3. Create a new project and link it to your GitHub repository.
+4. Configure the following environment variables in the Vercel dashboard:
+   - `DATABASE_CONNECTION`
+   - `JWT_KEY`
+   - `JWT_ISSUER`
+   - `JWT_AUDIENCE`
+5. Deploy the project.
 
-### 4. Run the API
+The API is designed as serverless functions, allowing efficient scaling and reduced overhead. It uses Identity for user management, including registration, authentication, and role-based authorization.
 
-```bash
-dotnet build
-dotnet run
-```
+The API will be live and accessible at `https://actionmoviecatalog.vercel.app/swagger`.
 
-### 5. Test the API
+## Author
 
--   **POST /api/auth/login**: Authenticates the user and returns a JWT.
--   **GET /api/movies**: Lists the registered movies.
--   **POST /api/movies**: Creates a new movie.
--   **PUT /api/movies/{id}**: Updates a movie.
--   **DELETE /api/movies/{id}**: Deletes a movie.
+Keo Coelho
 
-Use the generated **JWT** from the login to authorize subsequent requests.
-
-## Technologies Used
-
--   **.NET 8**: Framework for the API.
--   **JWT**: User authentication.
--   **Oracle Database (PL/SQL)**: Database for data persistence.
--   **Docker**: To run the database and application in containers.
-
-
-## Created by 
-
-[Keo Coelho](https://keodevspace.vercel.app/index.html) 

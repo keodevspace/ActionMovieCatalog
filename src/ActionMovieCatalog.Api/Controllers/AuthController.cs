@@ -1,6 +1,6 @@
 using ActionMovieCatalog.Api.Data;
-using ActionMoviesCatalog.Api.Authentication;
-using ActionMoviesCatalog.Api.Entities;
+using ActionMovieCatalog.Api.Authentication;
+using ActionMovieCatalog.Api.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ActionMoviesCatalog.Api.Controllers

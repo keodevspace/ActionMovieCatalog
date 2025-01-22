@@ -1,5 +1,5 @@
 using ActionMovieCatalog.Api.Data;
-using ActionMoviesCatalog.Api.Entities;
+using ActionMovieCatalog.Api.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

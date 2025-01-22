@@ -1,11 +1,12 @@
-namespace ActionMoviesCatalog.Api.Entities
-    {
+namespace ActionMovieCatalog.Api.Entities
+{
     public class Movie
-        {
-        public int MovieId { get; set; }
-        public string Title { get; set; }
-        public int ReleaseYear { get; set; }
-        public string Director { get; set; }
-        public double Rating { get; set; }
-        }
+    {
+        public int MovieId { get; set; } = string.Empty;
+        public string Title { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
+        public string Director { get; set; } = string.Empty;
+        public int ReleaseYear { get; set; } = string.Empty;
+        public float Rating { get; set; } = string.Empty;
     }
+}

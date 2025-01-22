@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using ActionMoviesCatalog.Api.Entities;
+using ActionMovieCatalog.Api.Entities;
 
 namespace ActionMovieCatalog.Api.Data
     {
