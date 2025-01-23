@@ -20,7 +20,7 @@ var connectionString = GetEnvironmentVariable("DATABASE_CONNECTION");
 
 // Configure DatabaseContext
 builder.Services.AddDbContext<DatabaseContext>(options =>
-    options.UseSqlite(connectionString)); // Change to SQLite
+    options.UseSqlite(connectionString));
 
 // Configure Identity
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()
@@ -91,7 +91,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "Action Movie Catalog API V1");
-        c.RoutePrefix = "swagger"; // Serve Swagger UI at /swagger
+        c.RoutePrefix = "swagger"; // Serve Swagger UI
     });
     }
 
