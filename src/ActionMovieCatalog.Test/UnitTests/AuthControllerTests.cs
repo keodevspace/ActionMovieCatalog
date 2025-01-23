@@ -1,5 +1,7 @@
+using ActionMovieCatalog.Api.Data;
+using ActionMovieCatalog.Api.Entities; // Add this import
 using ActionMoviesCatalog.Api.Controllers;
-using ActionMoviesCatalog.Api.Data;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Moq;
 using Xunit;
@@ -17,7 +19,7 @@ namespace ActionMoviesCatalog.Tests.UnitTests
             var controller = new AuthController(mockContext.Object, mockConfig.Object);
 
             // Act
-            var result = controller.Login(new { Username = "invalid", Password = "invalid" });
+            var result = controller.Login(new User { Username = "invalid", PasswordHash = "invalid" });
 
             // Assert
             Assert.IsType<UnauthorizedResult>(result);

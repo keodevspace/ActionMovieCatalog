@@ -1,5 +1,5 @@
-﻿using ActionMoviesCatalog.Api.Controllers;
-using ActionMoviesCatalog.Api.Data;
+﻿using ActionMovieCatalog.Api.Data;
+using ActionMoviesCatalog.Api.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using Xunit;

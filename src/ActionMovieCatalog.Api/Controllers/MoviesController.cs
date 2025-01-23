@@ -17,7 +17,7 @@ namespace ActionMoviesCatalog.Api.Controllers
             }
 
         [HttpGet]
-        [Authorize]
+        // [Authorize] // Temporarily remove this line for testing
         public IActionResult GetAll()
             {
             return Ok(_context.Movies.ToList());
@@ -33,3 +33,5 @@ namespace ActionMoviesCatalog.Api.Controllers
             }
         }
     }
+
+

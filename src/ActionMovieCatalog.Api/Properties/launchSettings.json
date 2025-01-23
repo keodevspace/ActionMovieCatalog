@@ -1,25 +1,13 @@
 ﻿{
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "name": "Launch ActionMovieCatalog",
-      "type": "coreclr",
-      "request": "launch",
-      "preLaunchTask": "build",
-      "program": "${workspaceFolder}/src/ActionMovieCatalog.Api/bin/Debug/net8.0/ActionMovieCatalog.Api.dll",
-      "args": [],
-      "cwd": "${workspaceFolder}/src/ActionMovieCatalog.Api",
-      "stopAtEntry": false,
-      "serverReadyAction": {
-        "action": "openExternally",
-        "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
-      },
-      "env": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "sourceFileMap": {
-        "/Views": "${workspaceFolder}/src/ActionMovieCatalog.Api/Views"
+  "profiles": {
+    "ActionMovieCatalog.Api": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "JWT_KEY": "123",
+        "JWT_ISSUER": "123",
+        "JWT_AUDIENCE": "123",
+        "DATABASE_CONNECTION": "Data Source=action_movie_catalog.db"
       }
     }
-  ]
+  }
 }

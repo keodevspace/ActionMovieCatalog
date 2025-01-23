@@ -17,7 +17,7 @@ namespace ActionMovieCatalog.Api.Data
             {
             base.OnModelCreating(modelBuilder);
 
-            // Mpvie Entity Configuration
+            // Movie Entity Configuration
             modelBuilder.Entity<Movie>(entity =>
             {
                 entity.HasKey(m => m.MovieId);
@@ -46,3 +46,4 @@ namespace ActionMovieCatalog.Api.Data
             }
         }
     }
+
