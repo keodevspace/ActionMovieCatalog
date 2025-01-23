@@ -28,3 +28,4 @@ public static async Task AddMovie(HttpContext context)
     context.Response.ContentType = "application/json";
     await context.Response.WriteAsync(JsonSerializer.Serialize(movie));
     }
+

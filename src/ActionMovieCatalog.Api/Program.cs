@@ -50,6 +50,7 @@ builder.Services.AddAuthentication(options =>
 // Configure Swagger with JWT Support
 builder.Services.AddSwaggerGen(options =>
 {
+    options.SwaggerDoc("v1", new OpenApiInfo { Title = "Action Movie Catalog API", Version = "v1" });
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
         {
         Name = "Authorization",
@@ -87,7 +88,11 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
     {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Action Movie Catalog API V1");
+        c.RoutePrefix = "swagger"; // Serve Swagger UI at /swagger
+    });
     }
 
 app.UseHttpsRedirection();

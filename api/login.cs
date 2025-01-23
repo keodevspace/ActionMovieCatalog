@@ -41,3 +41,4 @@ public static async Task Login(HttpContext context)
     context.Response.ContentType = "application/json";
     await context.Response.WriteAsync(JsonSerializer.Serialize(new { Token = token }));
     }
+

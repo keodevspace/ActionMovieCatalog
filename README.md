@@ -18,7 +18,7 @@ This project is a RESTful API for managing an action movies catalog, built with 
 ## Setup
 
 1. Install .NET SDK 9.0 or later from [here](https://dotnet.microsoft.com/download).
-2. Run `dotnet restore` to install dependencies
+2. Run `dotnet restore` to install dependencies.
 3. Configure the database connection string as an environment variable `DATABASE_CONNECTION`.
 4. Add environment variables for JWT:
    - `JWT_KEY`: The secret key for signing tokens.
@@ -29,11 +29,11 @@ This project is a RESTful API for managing an action movies catalog, built with 
 ## Usage
 
 ### Local Development
-1. Run the API locally:
+1. Run the API locally:   
    ```bash
    dotnet run --project src/ActionMovieCatalog.Api
    ```
-2. Access the API documentation locally at `https://localhost:5000/swagger`.
+2. Access the API documentation locally at `http://localhost:5000/swagger`.
 
 ### Deployed API
 The API is deployed on Vercel and can be accessed via the provided public URL.

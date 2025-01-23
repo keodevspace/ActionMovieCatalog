@@ -2,14 +2,19 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/*.cs",
+      "src": "src/ActionMovieCatalog.Api/*.csproj",
       "use": "@vercel/dotnet"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/api/$1"
+      "dest": "src/ActionMovieCatalog.Api/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "src/ActionMovieCatalog.Api/$1"
     }
   ]
 }
+
