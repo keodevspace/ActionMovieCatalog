@@ -2,11 +2,11 @@
   "profiles": {
     "ActionMovieCatalog.Api": {
       "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:5001;http://localhost:5000",
       "environmentVariables": {
-        "JWT_KEY": "123",
-        "JWT_ISSUER": "123",
-        "JWT_AUDIENCE": "123",
-        "DATABASE_CONNECTION": "Data Source=action_movie_catalog.db"
+        "ASPNETCORE_ENVIRONMENT": "Development"
       }
     }
   }

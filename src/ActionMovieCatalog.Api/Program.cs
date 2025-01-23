@@ -8,15 +8,14 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// JWT settings from environment variables
-string GetEnvironmentVariable(string key) =>
-    Environment.GetEnvironmentVariable(key)
-    ?? throw new InvalidOperationException($"{key} not found in environment variables");
+// Add configuration to read from appsettings.json
+builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
-var jwtSecret = GetEnvironmentVariable("JWT_KEY");
-var jwtIssuer = GetEnvironmentVariable("JWT_ISSUER");
-var jwtAudience = GetEnvironmentVariable("JWT_AUDIENCE");
-var connectionString = GetEnvironmentVariable("DATABASE_CONNECTION");
+// JWT settings from configuration
+var jwtSecret = builder.Configuration["JWT_KEY"] ?? throw new InvalidOperationException("JWT_KEY not found in configuration");
+var jwtIssuer = builder.Configuration["JWT_ISSUER"] ?? throw new InvalidOperationException("JWT_ISSUER not found in configuration");
+var jwtAudience = builder.Configuration["JWT_AUDIENCE"] ?? throw new InvalidOperationException("JWT_AUDIENCE not found in configuration");
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("DefaultConnection not found in configuration");
 
 // Configure DatabaseContext
 builder.Services.AddDbContext<DatabaseContext>(options =>
@@ -91,7 +90,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "Action Movie Catalog API V1");
-        c.RoutePrefix = "swagger"; // Serve Swagger UI
+        c.RoutePrefix = string.Empty; // Serve Swagger UI at the app's root
     });
     }
 
@@ -101,8 +100,4 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-// Add a default route for the root
-app.MapGet("/", () => "Welcome to Action Movie Catalog API!");
-
 app.Run();
-
